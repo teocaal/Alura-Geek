@@ -1,0 +1,318 @@
+
+.logoAlura{
+    display: flex;
+    width: 97%;
+    height: 120px;
+    margin-left: 0;
+    padding: 30px 40px 0;
+}
+
+h1 {
+    
+    margin-left: 25%;
+    font-size: 3em;
+    font-family:"Black Ops One", system-ui;
+}
+
+h2 {
+    color: #5300C8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2.agregar {
+    color: #f4f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.delete-uno{
+    width: 30px;
+    height: 30px;
+}
+
+.imgFooter{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+/*main*/
+
+.container-items{
+    width: 65%; 
+    border: 1px solid #000; 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+.item{
+    width: calc(33.33% - 10px); 
+    border: 1px solid #ccc; 
+    margin: 5px; 
+    padding: 10px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 20);
+}
+
+
+.item .img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+
+.item:hover img{ 
+    transform: scale(1.2);
+
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-product button{
+    border: none;
+    background: none;
+    background-color:white;
+    color:#fff;
+    padding: 15px 10px;
+    cursor: pointer;
+
+}
+
+/*formulario*/
+
+#formulario-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    top: 280px;
+    right: 65px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-container h2 {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #5300C8;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-container form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+#formulario-container form input[type="text"],
+#formulario-container form input[type="number"],
+#formulario-container form input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 3px solid #5300C8;
+}
+
+#formulario-container form .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#formulario-container form button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5300C8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#formulario-container form button[type="reset"] {
+    background-color: #999;
+}
+
+#formulario-container input::placeholder {
+    font-style: italic;
+    color: #999;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#formulario-container form .buttons button {
+    padding: 12px 24px; 
+    cursor: pointer;
+    background-color: #5300C8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#formulario-container input::placeholder {
+    font-size: 1.1em; 
+    font-style: italic;
+    color: #999;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+/*media para celulares*/
+
+
+@media (max-width: 768px) {
+    
+    header {
+        text-align: center;
+    }
+
+    .logoAlura {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-left: 0;
+    }
+
+    /* Ajustar el contenedor de productos */
+    .container-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        border: none;
+        justify-content: center;
+    }
+
+    .item {
+        width: calc(50% - 10px);
+        margin: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .item img {
+        width: 70%;
+        height: auto;
+    }
+
+    .info-product {
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+
+  
+
+    .info-product button {
+        width: 20px; 
+        height: 20px; 
+        padding: 0; 
+        border: none; 
+        background: none; 
+        cursor: pointer; 
+    }
+    
+    
+    .info-product button .delete-uno {
+        width: 100%; 
+        height: 100%; 
+        display: block; 
+        object-fit: contain; 
+    }
+    
+
+    /* Ajustar el formulario */
+    #formulario-container {
+        width: 90%;
+        position: static;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    #formulario-container h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    #formulario-container form label {
+        font-size: 1em;
+    }
+
+    #formulario-container form input[type="text"],
+    #formulario-container form input[type="number"],
+    #formulario-container form input[type="text"] {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 10px;
+        border: 2px solid #5300C8;
+    }
+
+    #formulario-container form .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #formulario-container form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .imgFooter {
+        width: 100%;
+        height: auto;
+    }
+}
+

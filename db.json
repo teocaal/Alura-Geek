@@ -1,0 +1,34 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Game Boy Classic",
+      "precio": 60,
+      "imagen": "https://i.pinimg.com/736x/74/ab/33/74ab33ba60248a6727acf41f709e1753.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Stormtrooper Figure",
+      "precio": 60,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_773041-MLV74127490899_012024-O.webp"
+    },
+    {
+      "id": "3",
+      "nombre": "Game Boy Classic",
+      "precio": 60,
+      "imagen": "https://i.pinimg.com/736x/74/ab/33/74ab33ba60248a6727acf41f709e1753.jpg"
+    },
+    {
+      "id": "4",
+      "nombre": "Stormtrooper Figure",
+      "precio": 60,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_773041-MLV74127490899_012024-O.webp"
+    },
+    {
+      "id": "5",
+      "nombre": "Game Boy Classic",
+      "precio": 60,
+      "imagen": "https://i.pinimg.com/736x/74/ab/33/74ab33ba60248a6727acf41f709e1753.jpg"
+    }
+  ]
+}
